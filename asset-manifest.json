@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/test/static/js/main.6ab86735.chunk.js",
-    "main.js.map": "/test/static/js/main.6ab86735.chunk.js.map",
-    "runtime-main.js": "/test/static/js/runtime-main.7efb3eae.js",
-    "runtime-main.js.map": "/test/static/js/runtime-main.7efb3eae.js.map",
-    "static/css/2.7ad897a5.chunk.css": "/test/static/css/2.7ad897a5.chunk.css",
-    "static/js/2.43684489.chunk.js": "/test/static/js/2.43684489.chunk.js",
-    "static/js/2.43684489.chunk.js.map": "/test/static/js/2.43684489.chunk.js.map",
-    "index.html": "/test/index.html",
-    "precache-manifest.e8859506fe8eb7265f205551444e4470.js": "/test/precache-manifest.e8859506fe8eb7265f205551444e4470.js",
-    "service-worker.js": "/test/service-worker.js",
-    "static/css/2.7ad897a5.chunk.css.map": "/test/static/css/2.7ad897a5.chunk.css.map",
-    "static/css/main.27fd15f6.chunk.css.map": "/test/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.43684489.chunk.js.LICENSE.txt": "/test/static/js/2.43684489.chunk.js.LICENSE.txt"
+    "main.css": "/reactReduxCRUD/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/reactReduxCRUD/static/js/main.26cb02cf.chunk.js",
+    "main.js.map": "/reactReduxCRUD/static/js/main.26cb02cf.chunk.js.map",
+    "runtime-main.js": "/reactReduxCRUD/static/js/runtime-main.cd19e5e1.js",
+    "runtime-main.js.map": "/reactReduxCRUD/static/js/runtime-main.cd19e5e1.js.map",
+    "static/css/2.7ad897a5.chunk.css": "/reactReduxCRUD/static/css/2.7ad897a5.chunk.css",
+    "static/js/2.5c06f5d0.chunk.js": "/reactReduxCRUD/static/js/2.5c06f5d0.chunk.js",
+    "static/js/2.5c06f5d0.chunk.js.map": "/reactReduxCRUD/static/js/2.5c06f5d0.chunk.js.map",
+    "index.html": "/reactReduxCRUD/index.html",
+    "precache-manifest.1a13b2c01d476095f5f7f38e3d0405af.js": "/reactReduxCRUD/precache-manifest.1a13b2c01d476095f5f7f38e3d0405af.js",
+    "service-worker.js": "/reactReduxCRUD/service-worker.js",
+    "static/css/2.7ad897a5.chunk.css.map": "/reactReduxCRUD/static/css/2.7ad897a5.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/reactReduxCRUD/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.5c06f5d0.chunk.js.LICENSE.txt": "/reactReduxCRUD/static/js/2.5c06f5d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7efb3eae.js",
+    "static/js/runtime-main.cd19e5e1.js",
     "static/css/2.7ad897a5.chunk.css",
-    "static/js/2.43684489.chunk.js",
+    "static/js/2.5c06f5d0.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.6ab86735.chunk.js"
+    "static/js/main.26cb02cf.chunk.js"
   ]
 }
