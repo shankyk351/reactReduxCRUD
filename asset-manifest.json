@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-redux-CRUD/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/react-redux-CRUD/static/js/main.abcdb77f.chunk.js",
-    "main.js.map": "/react-redux-CRUD/static/js/main.abcdb77f.chunk.js.map",
-    "runtime-main.js": "/react-redux-CRUD/static/js/runtime-main.e517c928.js",
-    "runtime-main.js.map": "/react-redux-CRUD/static/js/runtime-main.e517c928.js.map",
-    "static/css/2.7ad897a5.chunk.css": "/react-redux-CRUD/static/css/2.7ad897a5.chunk.css",
-    "static/js/2.43684489.chunk.js": "/react-redux-CRUD/static/js/2.43684489.chunk.js",
-    "static/js/2.43684489.chunk.js.map": "/react-redux-CRUD/static/js/2.43684489.chunk.js.map",
-    "index.html": "/react-redux-CRUD/index.html",
-    "precache-manifest.df74883af6fac54cfda7b41a0c993980.js": "/react-redux-CRUD/precache-manifest.df74883af6fac54cfda7b41a0c993980.js",
-    "service-worker.js": "/react-redux-CRUD/service-worker.js",
-    "static/css/2.7ad897a5.chunk.css.map": "/react-redux-CRUD/static/css/2.7ad897a5.chunk.css.map",
-    "static/css/main.27fd15f6.chunk.css.map": "/react-redux-CRUD/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.43684489.chunk.js.LICENSE.txt": "/react-redux-CRUD/static/js/2.43684489.chunk.js.LICENSE.txt"
+    "main.css": "/test/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/test/static/js/main.6ab86735.chunk.js",
+    "main.js.map": "/test/static/js/main.6ab86735.chunk.js.map",
+    "runtime-main.js": "/test/static/js/runtime-main.7efb3eae.js",
+    "runtime-main.js.map": "/test/static/js/runtime-main.7efb3eae.js.map",
+    "static/css/2.7ad897a5.chunk.css": "/test/static/css/2.7ad897a5.chunk.css",
+    "static/js/2.43684489.chunk.js": "/test/static/js/2.43684489.chunk.js",
+    "static/js/2.43684489.chunk.js.map": "/test/static/js/2.43684489.chunk.js.map",
+    "index.html": "/test/index.html",
+    "precache-manifest.e8859506fe8eb7265f205551444e4470.js": "/test/precache-manifest.e8859506fe8eb7265f205551444e4470.js",
+    "service-worker.js": "/test/service-worker.js",
+    "static/css/2.7ad897a5.chunk.css.map": "/test/static/css/2.7ad897a5.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/test/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.43684489.chunk.js.LICENSE.txt": "/test/static/js/2.43684489.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e517c928.js",
+    "static/js/runtime-main.7efb3eae.js",
     "static/css/2.7ad897a5.chunk.css",
     "static/js/2.43684489.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.abcdb77f.chunk.js"
+    "static/js/main.6ab86735.chunk.js"
   ]
 }
