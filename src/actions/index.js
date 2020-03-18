@@ -1,36 +1,40 @@
+import {apiRequest} from './../globals/api';
+import {urls} from './../globals/constant';
 
-const getItemsAction = ()=>{
-    return {
-        type: 'GET_ITEMS'
-    }
+const getItemsAction = () => dispatch => {
+    let res = apiRequest('get','');
+    res.then(res=>{
+        dispatch({type: 'GET_ITEMS', payload: res})
+    }).catch(err=>{
+        console.log('err', err);
+    })
 }
 
-const addItemAction = (data)=>{
-    return {
-        type: 'ADD_ITEM',
-        payload: data
-    }
+const addItemAction = name => dispatch=>{
+    let res = apiRequest('post', '', {name: name});
+    res.then(res).then(res=>{
+            dispatch(getItemsAction());
+        }).catch(err=>{
+            console.log('create item err', err);
+        })
 }
 
-const updateItemAction = (data)=>{
-    return {
-        type: 'UPDATE_ITEM',
-        payload: data
-    }
+const updateItemAction = data => dispatch =>{
+    let res = apiRequest('post', urls.update, data);
+    res.then(res=>{
+            dispatch(getItemsAction());
+        }).catch(err=>{
+            console.log('update item err', err);
+        })
 }
 
-const removeItemAction = (data)=>{
-    return {
-        type: 'REMOVE_ITEM',
-        payload: data
-    }
+const removeItemAction = (id) => dispatch =>{
+    let res = apiRequest('delete', id)
+        res.then(res=>{
+            dispatch(getItemsAction());
+        }).catch(err=>{
+            console.log('err', err);
+        })
 }
 
-const submitItemAction = (data)=>{
-    return {
-        type: 'SUBMIT_ITEM',
-        payload: data
-    }
-}
-
-export {getItemsAction, addItemAction, updateItemAction, removeItemAction, submitItemAction};
+export {getItemsAction, addItemAction, updateItemAction, removeItemAction};

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
-import {getItemsAction, addItemAction, removeItemAction, submitItemAction, updateItemAction} from './../actions';
+import {getItemsAction, addItemAction, removeItemAction, updateItemAction} from './../actions';
 import { connect } from 'react-redux';
 
 class ShoppingList extends Component {
@@ -24,18 +23,14 @@ class ShoppingList extends Component {
     }
 
     submitItem = (e)=>{
-        console.log('isEdit', this.state.isEdit);
-        if(this.state.isEdit){
-            console.log('state name', this.state.name);
-            this.props.updateItemAction({id: this.state.editData.id, name: this.state.name});
-        }else{
-            this.props.submitItemAction({id: uuid(),name: this.state.name});
-        }
+        this.state.isEdit?
+            this.props.updateItemAction({_id: this.state.editData._id, name: this.state.name}):
+            this.props.addItemAction(this.state.name);
         e.preventDefault();
     }
 
     deleteItem = (e, item)=>{
-        this.props.removeItemAction(item.id);
+        this.props.removeItemAction(item._id);
     }
 
     modalToggle = ()=>{
@@ -63,8 +58,8 @@ class ShoppingList extends Component {
             <>
                 <button className="btn btn-dark my-5" onClick={this.modalToggle}>Add Item</button>
                 <ul className="list-group">
-                    {!items.length && <li className="list-group-item text-center">No Data found</li>}
-                    {items.length &&
+                    {!items?.length && <li className="list-group-item text-center">No Data found</li>}
+                    {items?.length &&
                         <table className="table table-bordered">
                         <thead>
                             <tr>
@@ -73,7 +68,7 @@ class ShoppingList extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {items.map((item, index)=>{
+                            {items?.map((item, index)=>{
                                 return(
                                     <tr key={index}>
                                         <td>{item.name}</td>
@@ -120,7 +115,6 @@ const mapDispatchToProps = {
     getItemsAction,
     addItemAction,
     removeItemAction,
-    submitItemAction,
     updateItemAction
 }
 const mapStateToProps = (state)=>{
