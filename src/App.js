@@ -3,16 +3,20 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import AppNavbar from './components/navbar';
-import ShoppingList from './components/shoppingList';
+import Routes from './routes';
+
+
+import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <AppNavbar />
-      <div className="container">
-        <ShoppingList />
-      </div>
+        <Router>
+          <AppNavbar />
+          <Routes />
+        </Router>
     </div>
   );
 }

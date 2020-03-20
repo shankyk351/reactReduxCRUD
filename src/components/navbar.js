@@ -4,16 +4,17 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
+    // NavbarBrand,
+    // NavItem,
+    // NavLink,
+    // UncontrolledDropdown,
+    // DropdownToggle,
+    // DropdownMenu,
+    // DropdownItem,
     NavbarText
   } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class AppNavbar extends Component {
 
@@ -37,17 +38,17 @@ class AppNavbar extends Component {
         return ( 
             <>
                 <Navbar color="dark" dark expand="sm">
-                    <NavbarBrand href="/">ReactReduxCRUD</NavbarBrand>
+                    <Link className="text-white f-20" to="/">ReactReduxCRUD</Link>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
-                        </NavItem>
+                        {/* <NavItem>
+                            <Link href="/components/">Github</Link>
+                        </NavItem> */}
                         {/* <NavItem>
                             <NavLink href="/">GitHub</NavLink>
                         </NavItem> */}
-                        <UncontrolledDropdown nav inNavbar>
+                        {/* <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
                                 Options
                             </DropdownToggle>
@@ -63,9 +64,13 @@ class AppNavbar extends Component {
                                 Reset
                                 </DropdownItem>
                             </DropdownMenu>
-                        </UncontrolledDropdown>
+                        </UncontrolledDropdown> */}
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                    <NavbarText>
+                        <Link to="/login" className="btn btn-sm btn-primary mr-2">Login</Link>
+                        <Link to="/register" className="btn btn-sm btn-primary mr-2">Register</Link>
+                        <Link to="/" className="btn btn-sm btn-danger">Logout</Link>
+                    </NavbarText>
                     </Collapse>
                 </Navbar>
             </>

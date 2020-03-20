@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux';
+import { reducer as formReducer } from 'redux-form'
 
 const initialState = {
     items: []
@@ -21,6 +22,7 @@ const itemReducer = (state=initialState, data)=>{
 }
 
 const AllReducers = combineReducers({
+    form: formReducer,
     itemReducer
 })
 
